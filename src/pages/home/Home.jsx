@@ -4,6 +4,7 @@ import './Home.scss';
 import Navbar from '../../components/Navbar/Navbar';
 import Footer from '../../components/Footer/Footer';
 import Slider from "../../components/Slider/Slider"
+import Products from "../../components/Products/Products"
 
 
 function Home() {
@@ -13,7 +14,7 @@ function Home() {
       <div className='home-container'>
         <Navbar/>
         <div className="top"><Slider/></div>
-        <div className="center">Conetr</div>
+        <div className="center"><Products/></div>
         <div className="bottom">Bottom</div>
         <Footer/>
       </div>
