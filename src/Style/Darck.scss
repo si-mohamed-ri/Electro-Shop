@@ -1,0 +1,48 @@
+.app.dark {
+  background-color: black;
+  color: rgba(128, 128, 128, 0.884);
+
+  .chartGrid {
+    stroke: rgba(228, 228, 228, 0.219);
+  }
+
+  .table {
+    background-color: #111;
+
+    .tableCell {
+      color: #555;
+    }
+  }
+
+  .navbar {
+    color: #fff;
+    background-color: #0000;
+
+    .left {
+      .Icon {
+        color: #808088;
+    }
+    }
+  }
+
+  .sidebar {
+    background-color: #111;
+    border-color: #333;
+    color: #fff;
+
+    .top {
+      .logo {
+        color: #fff;
+      }
+    }
+
+    hr {
+      border-color: #333;
+    }
+    .item {
+      span {
+        color: #fff;
+      }
+    }
+  }
+}

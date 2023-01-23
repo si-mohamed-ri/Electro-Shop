@@ -1,0 +1,60 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    background-color: #808080;
+    height: 50px;
+    width: 100%;
+
+    .left {
+        
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        border: 1px solid lightgray;
+        border-radius: 10px;
+        margin-left: 2rem;
+        background-color: #fff;
+        height: 1rem;
+        padding: 0.5rem;
+        margin-top: 0.5rem;
+        width: 15rem;
+
+        input {
+            border: none;
+            border-radius: 10px;
+            width: 100%;
+
+            &:focus {
+                outline: none;
+            }
+        }
+        .Icon {
+            cursor: pointer;
+        }
+    }
+    .right {
+        display: flex;
+        align-items: center;
+        padding: 10px 20px;
+        margin-right: 4rem;
+
+        .items {
+            display: flex;
+            gap: 50px;
+
+            
+
+            .item {
+                display: flex;
+                gap: 10px;
+                cursor: pointer;
+                
+                img {
+                    width: 20px;
+                }
+            }
+        }
+    }
+}
