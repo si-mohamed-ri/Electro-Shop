@@ -1,17 +1,10 @@
 .app.dark {
   background-color: black;
-  color: rgba(128, 128, 128, 0.884);
+  color: #fff;
 
-  .chartGrid {
-    stroke: rgba(228, 228, 228, 0.219);
-  }
-
-  .table {
-    background-color: #111;
-
-    .tableCell {
-      color: #555;
-    }
+  .home {
+    background-color: black;
+    color: #fff;
   }
 
   .navbar {
@@ -44,5 +37,8 @@
         color: #fff;
       }
     }
+  }
+  .footer {
+    background-color: black;
   }
 }
