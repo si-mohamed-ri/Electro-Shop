@@ -1,0 +1,126 @@
+.review {
+
+    h1 {
+        text-align: center;
+        margin-bottom: 2rem;
+        font-size: 20px;
+    }
+
+    .container {
+        box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.75);
+        -webkit-box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.75);
+        -moz-box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.75);
+        border-radius: 10px;
+        margin-bottom: 2rem;
+
+        .reviewItems {
+            padding: 1rem;
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            border-radius: 10px;
+
+            li {
+                box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.75);
+                -webkit-box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.75);
+                -moz-box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.75);
+                padding: 1rem;
+                cursor: pointer;
+                border-radius: 15px;
+                width: 18rem;
+               
+                &:hover {
+                    background-color: azure;
+                }
+
+                img {
+                    widows: 100%;
+                    object-fit: cover;
+                    border-radius: 10px;
+                    display: block;
+                    margin-left: auto;
+                    margin-right: auto;
+                }
+
+                p {
+                    margin-bottom: 20px;
+                }
+
+                span {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    .star {
+                        width: 30px;
+                        color: #D4AF37;
+                    }
+                }
+            }
+        }
+    }
+    .delverTop {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        padding: 1rem;
+
+        h1 {
+            font-size: 20px;
+            text-align: center;
+            
+        }
+
+        img {
+            width: 40px;margin-bottom: 2rem;
+        }
+    }
+
+    .delve {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+        h1 {
+            padding: 2rem;
+            font-size: 20px;
+        }
+        
+    }
+    span {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 20px;
+        font-weight: bold;
+    }
+    .subscrib {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border: 1px solid #fff;
+        width: 50%;
+        border-radius: 10px;
+        background-color: #fff;
+        margin-bottom: 40px;
+
+        input {
+            border: none;
+            width: 100%;
+
+            &:focus {
+                outline: none;
+            }
+        }
+
+        .Icon {
+            background-color: #56C2BB;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 30px;
+        }
+    }
+}

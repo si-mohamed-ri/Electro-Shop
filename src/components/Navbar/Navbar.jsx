@@ -26,7 +26,7 @@ const Navbar = () => {
           </div>
           <div className="item">
             <img src="https://cdn-icons-png.flaticon.com/512/5006/5006765.png" alt="" />
-            <span>Carts</span>
+            <span>Carts<span>(5)</span></span>
           </div>
         </div>
       </div>

@@ -5,6 +5,11 @@
   .home {
     background-color: black;
     color: #fff;
+
+    .scrollbar {
+      background-color: black;
+      color: #fff;
+    }
   }
 
   .navbar {
@@ -14,7 +19,7 @@
     .left {
       .Icon {
         color: #808088;
-    }
+      }
     }
   }
 
@@ -32,13 +37,78 @@
     hr {
       border-color: #333;
     }
+
     .item {
       span {
         color: #fff;
       }
     }
   }
+
   .footer {
     background-color: black;
+  }
+
+  .product {
+
+    .productItem {
+
+      .listItem {
+
+        li {
+          background-color: rgb(69, 72, 72);
+
+          &:hover {
+            background-color: aliceblue;
+            color: #111;
+          }
+        }
+      }
+    }
+  }
+
+  .review {
+    .container {
+
+
+      .reviewItems {
+
+        li {
+          &:hover {
+            color: #111;
+          }
+
+          p {}
+        }
+      }
+    }
+  }
+
+  .phone {
+    background-color: black;
+    color: #fff;
+
+    .phone-container {
+
+      .phoneItems {
+
+        .Items {
+
+          li {
+            background-color: rgb(69, 72, 72);
+            &:hover {
+              background-color: aliceblue;
+              color: #111;
+            }
+
+          }
+
+
+
+        }
+
+
+      }
+    }
   }
 }

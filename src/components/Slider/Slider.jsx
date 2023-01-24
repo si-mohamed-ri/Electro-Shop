@@ -35,6 +35,7 @@ export default function Slider() {
             className={slideIndex === index + 1 ? "slide active-anim" : "slide"}
           >
             <img src={obj.imgPuct} alt=""/>
+            
           </div>
         );
       })}

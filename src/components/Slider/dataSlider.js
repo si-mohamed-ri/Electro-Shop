@@ -6,7 +6,7 @@ const dataSlider = [
   },
   {
     id: 2,
-    imgPuct: "https://images.unsplash.com/photo-1557690267-fad2f168bb95?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2970&q=80"
+    imgPuct: "https://m.media-amazon.com/images/I/61z-rTknwVS._AC_SX679_.jpg"
   },
   {
     id: 3,
@@ -18,7 +18,7 @@ const dataSlider = [
   },
   {
     id: 5,
-    imgPuct: "https://images.unsplash.com/photo-1615006801329-249dcef6aa0f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1887&q=80"
+    imgPuct: "https://m.media-amazon.com/images/I/7173p0j-mbL._AC_UL640_FMwebp_QL65_.jpg"
   },
 ];
 
