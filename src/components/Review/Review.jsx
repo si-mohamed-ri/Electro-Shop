@@ -3,6 +3,7 @@ import "./Review.scss";
 import { review } from "../../DaynamicData";
 import StarBorderPurple500OutlinedIcon from "@mui/icons-material/StarBorderPurple500Outlined";
 import SendOutlinedIcon from "@mui/icons-material/SendOutlined";
+import LocalShippingOutlinedIcon from '@mui/icons-material/LocalShippingOutlined';
 
 const Review = () => {
   return (
@@ -26,10 +27,11 @@ const Review = () => {
       </div>
       <div className="delverTop">
         <h1>Dellevry</h1>
-        <img
+        <LocalShippingOutlinedIcon className="icon"/>
+        {/* <img
           src="https://cdn-icons-png.flaticon.com/128/709/709790.png"
           alt=""
-        />
+        /> */}
       </div>
       <span>24/24 All Week, All Moroccan Cities.</span>
       <div className="delve">

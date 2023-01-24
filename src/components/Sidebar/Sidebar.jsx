@@ -27,10 +27,12 @@ function Sidebar() {
           <span>Phone</span>
         </div>
         </Link>
+        <Link to="/headphones" style={{textDecoration: "none", color: "#111"}}>
         <div className="item">
           <img src="https://cdn-icons-png.flaticon.com/512/3591/3591933.png" alt="" />
           <span>Headphones</span>
         </div>
+        </Link>
         <div className="item">
           <img src="https://cdn-icons-png.flaticon.com/512/3616/3616437.png" alt="" />
           <span>Laptops</span>

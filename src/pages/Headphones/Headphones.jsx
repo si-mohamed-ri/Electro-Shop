@@ -1,64 +1,63 @@
 import React, { useState } from "react";
-import "./Phone.scss";
+import "./Headphones.scss";
 import Sidebar from "../../components/Sidebar/Sidebar";
-import Navbar from "../../components/Navbar/Navbar";
 import Footer from "../../components/Footer/Footer";
-import { phone } from "../../DaynamicData";
-import ReactPaginate from "react-paginate";
+import Navbar from "../../components/Navbar/Navbar";
+import { headphones } from "../../DaynamicData";
 import AddShoppingCartOutlinedIcon from "@mui/icons-material/AddShoppingCartOutlined";
+import ReactPaginate from "react-paginate";
 
-const Phone = () => {
-  const All = phone.length;
-  const [product, setProduct] = useState(phone.slice(0, All));
-  const [pageNumber, setPageNumber] = useState(0);
-  console.log(setProduct);
+const Headphones = () => {
+  const All = headphones.length;
+  const [headphone, setHeadphone] = useState(headphones.slice(0, All));
+  const [pageNum, setPageNum] = useState(0);
+  console.log(setHeadphone);
 
   const PerPage = 6;
-  const pageVisted = pageNumber * PerPage;
+  const PageViseted = pageNum * PerPage;
 
-  const ShiftingProduct = product
-    .slice(pageVisted, pageVisted + PerPage)
-    .map((item) => (
-      <li key={item.id}>
+  const ShiftHeadPhone = headphone.slice(
+    PageViseted,
+    PageViseted + PerPage).map((item) => 
+    <li key={item.id}>
         <img src={item.Img} alt="" />
-        <h1>{item.Uname}</h1>
+        <h1>{item.Name}</h1>
         <div className="info">
           <span>{item.price} $</span>
           <div className="right">
             <AddShoppingCartOutlinedIcon />
           </div>
         </div>
-      </li>
-    ));
+    </li>)
+  ;
 
-  const pageCount = Math.ceil(product.length / PerPage);
-
-  const onchagePage = ({ selected }) => {
-    setPageNumber(selected);
-  };
+  const pageCount = Math.ceil(headphones.length / PerPage);
+  const onChangePage = (selected) => {
+        setPageNum(selected);
+  }
 
   return (
     <>
-      <div className="phone">
+      <div className="headphone">
         <Sidebar />
-        <div className="phone-container">
+        <div className="headphone-container">
           <Navbar />
           <h1>
-            Phone Category
+            HeadPhones Category
             <img
-              src="https://cdn-icons-png.flaticon.com/512/2983/2983780.png"
+              src="https://cdn-icons-png.flaticon.com/512/3591/3591933.png"
               alt=""
             />
           </h1>
-          <div className="phoneItems">
-            <ul className="Items">{ShiftingProduct}</ul>
+          <div className="headItems">
+            <ul>{ShiftHeadPhone}</ul>
           </div>
           <div className="prev-nex">
             <ReactPaginate
               previousLabel={"Prev"}
               nextLabel={"Next"}
               pageCount={pageCount}
-              onPageChange={onchagePage}
+              onPageChange={onChangePage}
               containerClassName={"paginationBtn"}
               previousLinkClassName={"prevBtn"}
               nextLinkClassName={"nextBtn"}
@@ -73,4 +72,4 @@ const Phone = () => {
   );
 };
 
-export default Phone;
+export default Headphones;

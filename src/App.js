@@ -4,6 +4,7 @@ import "./Style/Darck.scss";
 import { useContext } from "react";
 import { DarkModeContext } from "./context/darkModeContext";
 import Phone from "./pages/Phone/Phone";
+import Headphones from "./pages/Headphones/Headphones";
 
 function App() {
   const { darkMode } = useContext(DarkModeContext);
@@ -15,6 +16,7 @@ function App() {
           <Route path="/">
             <Route index element={<Home />} />
             <Route path="/phone" element={<Phone/>} />
+            <Route path="/headphones" element={<Headphones/>} />
           </Route>
         </Routes>
       </BrowserRouter>
